@@ -25,6 +25,15 @@ public class ViewTree {
             view(a, num+1);
         }
     }
+    public static void viewPets(Persona persona){
+        System.out.println(persona.getFullName() + ", питомцы: ");
+        for (Animal a: persona.getListPets()){
+            System.out.println(a);
+        }
+        //System.out.println(persona.getListPets());
+
+    }
+
      public static void searchPeople(Persona persona) {
          System.out.println(persona.getFullName() + ", дети: ");
         for (Persona b: persona.getListName()){
