@@ -1,5 +1,6 @@
 package Tree;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ViewTree {
     public static void view(Persona root, int num){
@@ -33,7 +34,6 @@ public class ViewTree {
         //System.out.println(persona.getListPets());
 
     }
-
      public static void searchPeople(Persona persona) {
          System.out.println(persona.getFullName() + ", дети: ");
         for (Persona b: persona.getListName()){
@@ -42,5 +42,4 @@ public class ViewTree {
             }
         }
     }
-
 }

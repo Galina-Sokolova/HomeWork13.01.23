@@ -6,9 +6,8 @@ public class Persona {
     private String fullName;
     private  Animal anim;
     private ArrayList<Animal> listPets;
-
     public String getFullName() {
-        return fullName;
+         return fullName;
     }
     public Persona getParent(){
         return parent;
@@ -31,12 +30,15 @@ public class Persona {
         this(fullName, null, listPets);
     }
     ArrayList<Persona> listName = new ArrayList<>();
+
     public void addName(Persona persona){
+
         listName.add(persona);
     }
     public ArrayList<Persona> getListName() {
         return listName;
     }
+
     public ArrayList<Animal> getListPets() {
         return listPets;
     }
